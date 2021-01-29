@@ -1,0 +1,8 @@
+cloud_to_gridmap:
+  sub_map_topic: "globalmap"
+  
+  map_min_z: 2.0
+  map_max_z: 3.0
+  map_resolution: 0.5
+  map_pyramid_level: 1
+  max_points_per_cell: 5

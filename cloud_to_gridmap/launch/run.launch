@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<launch>
+  <arg name="project" default="cloud_to_gridmap"/>
+  
+  <!-- Parameters -->
+  <rosparam file="$(find cloud_to_gridmap)/config/params.yaml" command="load" /> 
+  
+  <!--- Start Node -->
+  <node pkg="$(arg project)" type="$(arg project)" name="$(arg project)" output="screen" respawn="false"/>
+  
+</launch>
